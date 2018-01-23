@@ -1,0 +1,17 @@
+{
+  "name": "dothtml5-reader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1" ,
+    "dothtml5" : "node dotHTML5.js"
+  },
+  "author": "kenmiya4869",
+  "license": "ISC",
+  "dependencies": {
+    "feedparser": "^2.2.8",
+    "request": "^2.83.0",
+    "util": "^0.10.3"
+  }
+}
