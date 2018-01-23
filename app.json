@@ -1,0 +1,17 @@
+{
+  "name": "slack-bot",
+  "description": "slack bot用のサンプルリポジトリ",
+  "scripts": {
+    "postdeploy": "npm install"
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
