@@ -26,6 +26,7 @@ feedParser.on( 'end' , function() {
 		if( ( date.getFullYear()	=== today.getFullYear()	) &&
 			( date.getMonth()		=== today.getMonth()	) &&
 			( date.getDate()		=== today.getDate()		) ) {
+				console.log( JSON.stringify( item ) );
 				console.log( Utillity.format( 'target link is : %s' , item.link ) );
 			}
 	});
