@@ -14,9 +14,18 @@ var controller = Botkit.slackbot({
     debug: true,
 });
 
+
+var tokenIndex	= process.argv.indexOf( "-token" );
+if( tokenIndex === -1 || process.argv.length <= tokenIndex ) {
+	console.log('Error: Specify token in environment');
+	console.log( process );
+    process.exit( 1 );
+}
+
 var bot = controller.spawn({
-    token: 'XXXXXXXXXXXXXXXXX'
+    token: process.argv[ tokenIndex + 1 ]
 }).startRTM();
+
 
 controller.hears( rssGetMessage , 'direct_message , direct_mention , mention', function( bot , message ) {
 	var target		= message.match[ 1 ].toLowerCase();
