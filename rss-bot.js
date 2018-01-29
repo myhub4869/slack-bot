@@ -15,7 +15,7 @@ var controller = Botkit.slackbot({
 });
 
 var bot = controller.spawn({
-    token: 'xoxb-306109262583-yjl9Zj1TDX5jMuBBCFQ9ZWAx'
+    token: 'XXXXXXXXXXXXXXXXX'
 }).startRTM();
 
 controller.hears( rssGetMessage , 'direct_message , direct_mention , mention', function( bot , message ) {
